@@ -1,5 +1,4 @@
 let express = require("express");
-const path = require('path')
 let app = express();
 
 // 设置跨域
