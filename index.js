@@ -16,7 +16,6 @@ let charTwo = require("./router/two");
 let chartCenter = require('./router/center')
 let chartThree = require("./router/three");
 let chartFour = require("./router/four");
-let chartPub = require('./router/pub')
 
 
 // 使用中间件来配置路由
@@ -25,7 +24,6 @@ app.use("/two", charTwo);
 app.use('/center',chartCenter)
 app.use("/three", chartThree);
 app.use("/four", chartFour);
-app.use("/pub", chartPub);
 app.use('/static', express.static(path.join(__dirname, 'public')))
 
 
