@@ -24,7 +24,7 @@ app.use("/two", charTwo);
 app.use('/center',chartCenter)
 app.use("/three", chartThree);
 app.use("/four", chartFour);
-app.use('/static', express.static(path.join(__dirname, 'public')))
+app.use('/static', express.static('public'))
 
 
 app.listen(8888);
