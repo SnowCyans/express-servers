@@ -1,4 +1,5 @@
 let express = require("express");
+const path = require('path')
 let app = express();
 
 // 设置跨域
@@ -23,7 +24,7 @@ app.use("/two", charTwo);
 app.use('/center',chartCenter)
 app.use("/three", chartThree);
 app.use("/four", chartFour);
-app.use('/static', express.static('public'))
+app.use('/static', express.static(path.join(__dirname, 'public')))
 
 
 app.listen(8888);
